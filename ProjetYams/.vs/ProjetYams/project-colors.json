@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "2363794c-f2cf-4e5b-bc2c-404d665b4fe5": {
+      "ProjectGuid": "2363794c-f2cf-4e5b-bc2c-404d665b4fe5",
+      "DisplayName": "ProjetYams",
+      "ColorIndex": 0
+    },
+    "2a070eac-1f11-4465-b21e-66cdf7ce04f3": {
+      "ProjectGuid": "2a070eac-1f11-4465-b21e-66cdf7ce04f3",
+      "DisplayName": "ClassLibrary",
+      "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Fichiers divers",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 2
+}
