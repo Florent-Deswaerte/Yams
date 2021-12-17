@@ -55,12 +55,11 @@ namespace ProjetYams
             }
             else
             {
-                Players playersObject = new Players();
-                playersObject.PseudoPlayer1 = textBoxJoueur1.Text;
-                playersObject.PseudoPlayer2 = textBoxJoueur2.Text;
+                Player joueur1 = new Player(textBoxJoueur1.Text);
+                Player joueur2 = new Player(textBoxJoueur2.Text);
 
                 this.Hide();
-                Game game = new Game();
+                Game game = new Game(joueur1, joueur2, this);
                 game.Closed += (s, args) => this.Close();
                 game.Show();
             }

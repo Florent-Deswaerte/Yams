@@ -15,26 +15,37 @@ namespace ProjetYams
 {
     public partial class Game : Form
     {
+        Player joueur1;
+        Player joueur2;
+        Main main;
 
-        public Game()
+        bool tour = true;
+
+        public Game(Player joueur1, Player joueur2, Main main)
         {
-            AffichageTour();
+            this.joueur1 = joueur1;
+            this.joueur2 = joueur2;
+            this.main = main;
+
             InitializeComponent();
+            AffichageTour();
         }
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
-        private extern static void ReleaseCapture();
+        private extern static void ReleaseCapture2();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
-        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+        private extern static void SendMessage2(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
 
         private void panelTitleBar2_MouseDown(object sender, MouseEventArgs e)
         {
-            ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
+            ReleaseCapture2();
+            SendMessage2(this.Handle, 0x112, 0xf012, 0);
         }
 
         private void btnClose2_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Hide();
+            main.Closed += (s, args) => this.Close();
+            main.Show();
         }
 
         private void btnMinimize2_Click(object sender, EventArgs e)
@@ -44,14 +55,17 @@ namespace ProjetYams
 
         public void AffichageTour()
         {
-            Players playersObject = new Players();
-            if (playersObject.Tour)
+            if (tour)
             {
-                playersObject.Tour = false;
+                labelPseudoGame.Text = "";
+                labelPseudoGame.Text = joueur1.Pseudo;
+                tour = false;
             }
             else
             {
-                playersObject.Tour = true;
+                labelPseudoGame.Text = "";
+                labelPseudoGame.Text = joueur2.Pseudo;
+                tour = true;
             }
         }
     }

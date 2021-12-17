@@ -10,6 +10,15 @@
         /// <summary>
         /// Clean up any resources being used.
         /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
 
         #region Windows Form Designer generated code
 
@@ -27,7 +36,7 @@
             this.labelBy = new System.Windows.Forms.Label();
             this.labelTitle = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.labelPseudo = new System.Windows.Forms.Label();
+            this.labelPseudoGame = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelTitleBar2.SuspendLayout();
@@ -115,16 +124,16 @@
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
-            // labelPseudo
+            // labelPseudoGame
             // 
-            this.labelPseudo.AutoSize = true;
-            this.labelPseudo.Font = new System.Drawing.Font("Montserrat", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelPseudo.ForeColor = System.Drawing.Color.Black;
-            this.labelPseudo.Location = new System.Drawing.Point(8, 709);
-            this.labelPseudo.Name = "labelPseudo";
-            this.labelPseudo.Size = new System.Drawing.Size(95, 37);
-            this.labelPseudo.TabIndex = 5;
-            this.labelPseudo.Text = "YAMS";
+            this.labelPseudoGame.AutoSize = true;
+            this.labelPseudoGame.Font = new System.Drawing.Font("Montserrat", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelPseudoGame.ForeColor = System.Drawing.Color.Black;
+            this.labelPseudoGame.Location = new System.Drawing.Point(8, 709);
+            this.labelPseudoGame.Name = "labelPseudoGame";
+            this.labelPseudoGame.Size = new System.Drawing.Size(95, 37);
+            this.labelPseudoGame.TabIndex = 5;
+            this.labelPseudoGame.Text = "YAMS";
             // 
             // label2
             // 
@@ -143,7 +152,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1024, 768);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.labelPseudo);
+            this.Controls.Add(this.labelPseudoGame);
             this.Controls.Add(this.panelTitleBar2);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -168,7 +177,7 @@
         private Label labelBy;
         private Label labelTitle;
         private PictureBox pictureBox2;
-        private Label labelPseudo;
+        private Label labelPseudoGame;
         private Label label2;
     }
 }
