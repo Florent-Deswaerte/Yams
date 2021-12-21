@@ -177,6 +177,7 @@
             this.textBoxJoueur2.Font = new System.Drawing.Font("Montserrat", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBoxJoueur2.ForeColor = System.Drawing.Color.White;
             this.textBoxJoueur2.Location = new System.Drawing.Point(121, 254);
+            this.textBoxJoueur2.MaxLength = 8;
             this.textBoxJoueur2.Name = "textBoxJoueur2";
             this.textBoxJoueur2.PlaceholderText = "Pseudo";
             this.textBoxJoueur2.Size = new System.Drawing.Size(200, 32);
@@ -190,6 +191,7 @@
             this.textBoxJoueur1.Font = new System.Drawing.Font("Montserrat", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBoxJoueur1.ForeColor = System.Drawing.Color.White;
             this.textBoxJoueur1.Location = new System.Drawing.Point(121, 146);
+            this.textBoxJoueur1.MaxLength = 8;
             this.textBoxJoueur1.Name = "textBoxJoueur1";
             this.textBoxJoueur1.PlaceholderText = "Pseudo";
             this.textBoxJoueur1.Size = new System.Drawing.Size(200, 32);

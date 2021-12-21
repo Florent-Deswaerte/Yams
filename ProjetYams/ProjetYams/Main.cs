@@ -62,6 +62,8 @@ namespace ProjetYams
                 Game game = new Game(joueur1, joueur2, this);
                 game.Closed += (s, args) => this.Close();
                 game.Show();
+                textBoxJoueur1.Text = "";
+                textBoxJoueur2.Text = "";
             }
         }
     }
