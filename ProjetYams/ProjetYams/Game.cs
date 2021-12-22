@@ -96,8 +96,8 @@ namespace ProjetYams
 
             affichageCombinaison();
 
-            joueur1.Combiniason["Un"] = -1;joueur1.Combiniason["Deux"] = -1;joueur1.Combiniason["Trois"] = -1;joueur1.Combiniason["Quatre"] = -1;joueur1.Combiniason["Cinq"] = -1;joueur1.Combiniason["Six"] = -1;joueur1.Combiniason["Somme"] = -1;joueur1.Combiniason["Bonus"] = -1;joueur1.Combiniason["Brelan"] = -1;joueur1.Combiniason["Carré"] = -1;joueur1.Combiniason["Full"] = -1;joueur1.Combiniason["Petite suite"] = -1;joueur1.Combiniason["Grand suite"] = -1;joueur1.Combiniason["Chance"] = -1;joueur1.Combiniason["Yams"] = -1;joueur1.Combiniason["Total"] = -1;
-            joueur2.Combiniason["Un"] = -1; joueur2.Combiniason["Deux"] = -1; joueur2.Combiniason["Trois"] = -1; joueur2.Combiniason["Quatre"] = -1; joueur2.Combiniason["Cinq"] = -1; joueur2.Combiniason["Six"] = -1; joueur2.Combiniason["Somme"] = -1; joueur2.Combiniason["Bonus"] = -1; joueur2.Combiniason["Brelan"] = -1; joueur2.Combiniason["Carré"] = -1; joueur2.Combiniason["Full"] = -1; joueur2.Combiniason["Petite suite"] = -1; joueur2.Combiniason["Grand suite"] = -1; joueur2.Combiniason["Chance"] = -1; joueur2.Combiniason["Yams"] = -1;joueur2.Combiniason["Total"] = -1;
+            joueur1.Combinaison["Un"] = -1;joueur1.Combinaison["Deux"] = -1;joueur1.Combinaison["Trois"] = -1;joueur1.Combinaison["Quatre"] = -1;joueur1.Combinaison["Cinq"] = -1;joueur1.Combinaison["Six"] = -1;joueur1.Combinaison["Somme"] = -1;joueur1.Combinaison["Bonus"] = -1;joueur1.Combinaison["Brelan"] = -1;joueur1.Combinaison["Carré"] = -1;joueur1.Combinaison["Full"] = -1;joueur1.Combinaison["Petite suite"] = -1;joueur1.Combinaison["Grand suite"] = -1;joueur1.Combinaison["Chance"] = -1;joueur1.Combinaison["Yams"] = -1;joueur1.Combinaison["Total"] = -1;
+            joueur2.Combinaison["Un"] = -1; joueur2.Combinaison["Deux"] = -1; joueur2.Combinaison["Trois"] = -1; joueur2.Combinaison["Quatre"] = -1; joueur2.Combinaison["Cinq"] = -1; joueur2.Combinaison["Six"] = -1; joueur2.Combinaison["Somme"] = -1; joueur2.Combinaison["Bonus"] = -1; joueur2.Combinaison["Brelan"] = -1; joueur2.Combinaison["Carré"] = -1; joueur2.Combinaison["Full"] = -1; joueur2.Combinaison["Petite suite"] = -1; joueur2.Combinaison["Grand suite"] = -1; joueur2.Combinaison["Chance"] = -1; joueur2.Combinaison["Yams"] = -1;joueur2.Combinaison["Total"] = -1;
         }
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture2();
@@ -252,140 +252,140 @@ namespace ProjetYams
             //Un
             if (un != 0)
             {
-                if (tour == 1){labelCombinaison1J2.Text = unNombre.ToString();}
-                else if (tour == 2){labelCombinaison1J1.Text = unNombre.ToString();}
+                if (tour == 1 && labelCombinaison1J2.ForeColor == Color.Red){ labelCombinaison1J2.Text = unNombre.ToString();}
+                else if (tour == 2 && labelCombinaison1J1.ForeColor == Color.Red) {labelCombinaison1J1.Text = unNombre.ToString();}
             }
             else
             {
-                if (tour == 1){labelCombinaison1J2.Text = "";}
-                else if (tour == 2){labelCombinaison1J1.Text = "";}
+                if (tour == 1 && labelCombinaison1J2.ForeColor == Color.Red) {labelCombinaison1J2.Text = "";}
+                else if (tour == 2 && labelCombinaison1J1.ForeColor == Color.Red) {labelCombinaison1J1.Text = "";}
             }
             //Deux
             if (deux != 0)
             {
-                if (tour == 1) { labelCombinaison2J2.Text = deuxNombre.ToString(); }
-                else if (tour == 2) { labelCombinaison2J1.Text = deuxNombre.ToString(); }
+                if (tour == 1 && labelCombinaison2J2.ForeColor == Color.Red) { labelCombinaison2J2.Text = deuxNombre.ToString(); }
+                else if (tour == 2 && labelCombinaison2J1.ForeColor == Color.Red) { labelCombinaison2J1.Text = deuxNombre.ToString(); }
             }
             else
             {
-                if (tour == 1) { labelCombinaison2J2.Text = ""; }
-                else if (tour == 2) { labelCombinaison2J1.Text = ""; }
+                if (tour == 1 && labelCombinaison2J2.ForeColor == Color.Red) { labelCombinaison2J2.Text = ""; }
+                else if (tour == 2 && labelCombinaison2J1.ForeColor == Color.Red) { labelCombinaison2J1.Text = ""; }
             }
             //Trois
             if (trois != 0)
             {
-                if (tour == 1) { labelCombinaison3J2.Text = troisNombre.ToString(); }
-                else if (tour == 2) { labelCombinaison3J1.Text = troisNombre.ToString(); }
+                if (tour == 1 && labelCombinaison3J2.ForeColor == Color.Red) { labelCombinaison3J2.Text = troisNombre.ToString(); }
+                else if (tour == 2 && labelCombinaison3J1.ForeColor == Color.Red) { labelCombinaison3J1.Text = troisNombre.ToString(); }
             }
             else
             {
-                if (tour == 1) { labelCombinaison3J1.Text = ""; }
-                else if (tour == 2) { labelCombinaison3J2.Text = ""; }
+                if (tour == 1 && labelCombinaison3J2.ForeColor == Color.Red) { labelCombinaison3J2.Text = ""; }
+                else if (tour == 2 && labelCombinaison3J1.ForeColor == Color.Red) { labelCombinaison3J1.Text = ""; }
             }
             //Quatre
             if (quatre != 0)
             {
-                if (tour == 1) { labelCombinaison4J2.Text = quatreNombre.ToString(); }
-                else if (tour == 2) { labelCombinaison4J1.Text = quatreNombre.ToString(); }
+                if (tour == 1 && labelCombinaison4J2.ForeColor == Color.Red) { labelCombinaison4J2.Text = quatreNombre.ToString(); }
+                else if (tour == 2 && labelCombinaison4J1.ForeColor == Color.Red) { labelCombinaison4J1.Text = quatreNombre.ToString(); }
             }
             else
             {
-                if (tour == 1) { labelCombinaison4J2.Text = ""; }
-                else if (tour == 2) { labelCombinaison4J1.Text = ""; }
+                if (tour == 1 && labelCombinaison4J2.ForeColor == Color.Red) { labelCombinaison4J2.Text = ""; }
+                else if (tour == 2 && labelCombinaison4J1.ForeColor == Color.Red) { labelCombinaison4J1.Text = ""; }
             }
             //Cinq
             if (cinq != 0)
             {
-                if (tour == 1) { labelCombinaison5J2.Text = cinqNombre.ToString(); }
-                else if (tour == 2) { labelCombinaison5J1.Text = cinqNombre.ToString(); }
+                if (tour == 1 && labelCombinaison5J2.ForeColor == Color.Red) { labelCombinaison5J2.Text = cinqNombre.ToString(); }
+                else if (tour == 2 && labelCombinaison5J1.ForeColor == Color.Red) { labelCombinaison5J1.Text = cinqNombre.ToString(); }
             }
             else
             {
-                if (tour == 1) { labelCombinaison5J2.Text = ""; }
-                else if (tour == 2) { labelCombinaison5J1.Text = ""; }
+                if (tour == 1 && labelCombinaison5J2.ForeColor == Color.Red) { labelCombinaison5J2.Text = ""; }
+                else if (tour == 2 && labelCombinaison5J1.ForeColor == Color.Red) { labelCombinaison5J1.Text = ""; }
             }
             //Six
             if (six != 0)
             {
-                if (tour == 1) { labelCombinaison6J2.Text = sixNombre.ToString(); }
-                else if (tour == 2) { labelCombinaison6J1.Text = sixNombre.ToString(); }
+                if (tour == 1 && labelCombinaison6J2.ForeColor == Color.Red) { labelCombinaison6J2.Text = sixNombre.ToString(); }
+                else if (tour == 2 && labelCombinaison6J1.ForeColor == Color.Red) { labelCombinaison6J1.Text = sixNombre.ToString(); }
             }
             else
             {
-                if (tour == 1) { labelCombinaison6J2.Text = ""; }
-                else if (tour == 2) { labelCombinaison6J1.Text = ""; }
+                if (tour == 1 && labelCombinaison6J2.ForeColor == Color.Red) { labelCombinaison6J2.Text = ""; }
+                else if (tour == 2 && labelCombinaison6J1.ForeColor == Color.Red) { labelCombinaison6J1.Text = ""; }
             }
             //Brelan
             if (un >= 3)
             {
-                if (tour == 1) { labelCombinaisonBrelanJ2.Text = "3"; }
-                else if (tour == 2) { labelCombinaisonBrelanJ1.Text = "3"; }
+                if (tour == 1 && labelCombinaisonBrelanJ2.ForeColor == Color.Red) { labelCombinaisonBrelanJ2.Text = "3"; }
+                else if (tour == 2 && labelCombinaisonBrelanJ1.ForeColor == Color.Red) { labelCombinaisonBrelanJ1.Text = "3"; }
             }
             else if (deux >= 3)
             {
-                if (tour == 1) { labelCombinaisonBrelanJ2.Text = "6"; }
-                else if (tour == 2) { labelCombinaisonBrelanJ1.Text = "6"; }
+                if (tour == 1 && labelCombinaisonBrelanJ2.ForeColor == Color.Red) { labelCombinaisonBrelanJ2.Text = "6"; }
+                else if (tour == 2 && labelCombinaisonBrelanJ1.ForeColor == Color.Red) { labelCombinaisonBrelanJ1.Text = "6"; }
             }
             else if (trois >= 3)
             {
-                if (tour == 1) { labelCombinaisonBrelanJ2.Text = "9"; }
-                else if (tour == 2) { labelCombinaisonBrelanJ1.Text = "9"; }
+                if (tour == 1 && labelCombinaisonBrelanJ2.ForeColor == Color.Red) { labelCombinaisonBrelanJ2.Text = "9"; }
+                else if (tour == 2 && labelCombinaisonBrelanJ1.ForeColor == Color.Red) { labelCombinaisonBrelanJ1.Text = "9"; }
             }
             else if (quatre >= 3)
             {
-                if (tour == 1) { labelCombinaisonBrelanJ2.Text = "12"; }
-                else if (tour == 2) { labelCombinaisonBrelanJ1.Text = "12"; }
+                if (tour == 1 && labelCombinaisonBrelanJ2.ForeColor == Color.Red) { labelCombinaisonBrelanJ2.Text = "12"; }
+                else if (tour == 2 && labelCombinaisonBrelanJ1.ForeColor == Color.Red) { labelCombinaisonBrelanJ1.Text = "12"; }
             }
             else if (cinq >= 3)
             {
-                if (tour == 1) { labelCombinaisonBrelanJ2.Text = "15"; }
-                else if (tour == 2) { labelCombinaisonBrelanJ1.Text = "15"; }
+                if (tour == 1 && labelCombinaisonBrelanJ2.ForeColor == Color.Red) { labelCombinaisonBrelanJ2.Text = "15"; }
+                else if (tour == 2 && labelCombinaisonBrelanJ1.ForeColor == Color.Red) { labelCombinaisonBrelanJ1.Text = "15"; }
             }
             else if (six >= 3)
             {
-                if (tour == 1) { labelCombinaisonBrelanJ2.Text = "18"; }
-                else if (tour == 2) { labelCombinaisonBrelanJ1.Text = "18"; }
+                if (tour == 1 && labelCombinaisonBrelanJ2.ForeColor == Color.Red) { labelCombinaisonBrelanJ2.Text = "18"; }
+                else if (tour == 2 && labelCombinaisonBrelanJ1.ForeColor == Color.Red) { labelCombinaisonBrelanJ1.Text = "18"; }
             }
             else
             {
-                if (tour == 1) { labelCombinaisonBrelanJ2.Text = ""; }
-                else if (tour == 2) { labelCombinaisonBrelanJ1.Text = ""; }
+                if (tour == 1 && labelCombinaisonBrelanJ2.ForeColor == Color.Red) { labelCombinaisonBrelanJ2.Text = ""; }
+                else if (tour == 2 && labelCombinaisonBrelanJ1.ForeColor == Color.Red) { labelCombinaisonBrelanJ1.Text = ""; }
             }
             //Carre
             if (un >= 4)
             {
-                if (tour == 1) { labelCombinaisonCarreJ2.Text = "4"; }
-                else if (tour == 2) { labelCombinaisonCarreJ1.Text = "4"; }
+                if (tour == 1 && labelCombinaisonCarreJ2.ForeColor == Color.Red) { labelCombinaisonCarreJ2.Text = "4"; }
+                else if (tour == 2 && labelCombinaisonCarreJ1.ForeColor == Color.Red) { labelCombinaisonCarreJ1.Text = "4"; }
             }
             else if (deux >= 4)
             {
-                if (tour == 1) { labelCombinaisonCarreJ2.Text = "8"; }
-                else if (tour == 2) { labelCombinaisonCarreJ1.Text = "8"; }
+                if (tour == 1 && labelCombinaisonCarreJ2.ForeColor == Color.Red) { labelCombinaisonCarreJ2.Text = "8"; }
+                else if (tour == 2 && labelCombinaisonCarreJ1.ForeColor == Color.Red) { labelCombinaisonCarreJ1.Text = "8"; }
             }
             else if (trois >= 4)
             {
-                if (tour == 1) { labelCombinaisonCarreJ2.Text = "12"; }
-                else if (tour == 2) { labelCombinaisonCarreJ1.Text = "12"; }
+                if (tour == 1 && labelCombinaisonCarreJ2.ForeColor == Color.Red) { labelCombinaisonCarreJ2.Text = "12"; }
+                else if (tour == 2 && labelCombinaisonCarreJ1.ForeColor == Color.Red) { labelCombinaisonCarreJ1.Text = "12"; }
             }
             else if (quatre >= 4)
             {
-                if (tour == 1) { labelCombinaisonCarreJ2.Text = "16"; }
-                else if (tour == 2) { labelCombinaisonCarreJ1.Text = "16"; }
+                if (tour == 1 && labelCombinaisonCarreJ2.ForeColor == Color.Red) { labelCombinaisonCarreJ2.Text = "16"; }
+                else if (tour == 2 && labelCombinaisonCarreJ1.ForeColor == Color.Red) { labelCombinaisonCarreJ1.Text = "16"; }
             }
             else if (cinq >= 4)
             {
-                if (tour == 1) { labelCombinaisonCarreJ2.Text = "20"; }
-                else if (tour == 2) { labelCombinaisonCarreJ1.Text = "20"; }
+                if (tour == 1 && labelCombinaisonCarreJ2.ForeColor == Color.Red) { labelCombinaisonCarreJ2.Text = "20"; }
+                else if (tour == 2 && labelCombinaisonCarreJ1.ForeColor == Color.Red) { labelCombinaisonCarreJ1.Text = "20"; }
             }
             else if (six >= 4)
             {
-                if (tour == 1) { labelCombinaisonCarreJ2.Text = "24"; }
-                else if (tour == 2) { labelCombinaisonCarreJ1.Text = "24"; }
+                if (tour == 1 && labelCombinaisonCarreJ2.ForeColor == Color.Red) { labelCombinaisonCarreJ2.Text = "24"; }
+                else if (tour == 2 && labelCombinaisonCarreJ1.ForeColor == Color.Red) { labelCombinaisonCarreJ1.Text = "24"; }
             }
             else
             {
-                if (tour == 1) { labelCombinaisonCarreJ2.Text = ""; }
-                else if (tour == 2) { labelCombinaisonCarreJ1.Text = ""; }
+                if (tour == 1 && labelCombinaisonCarreJ2.ForeColor == Color.Red) { labelCombinaisonCarreJ2.Text = ""; }
+                else if (tour == 2 && labelCombinaisonCarreJ1.ForeColor == Color.Red) { labelCombinaisonCarreJ1.Text = ""; }
             }
 
             //Full
@@ -393,80 +393,80 @@ namespace ProjetYams
             {
                 if (un == 2 || deux == 2 || trois == 2 || quatre == 2 || cinq == 2 || six == 2)
                 {
-                    if (tour == 1) { labelCombinaisonFullJ2.Text = "25"; }
-                    else if (tour == 2) { labelCombinaisonFullJ1.Text = "25"; }
+                    if (tour == 1 && labelCombinaisonFullJ2.ForeColor == Color.Red) { labelCombinaisonFullJ2.Text = "25"; }
+                    else if (tour == 2 && labelCombinaisonFullJ1.ForeColor == Color.Red) { labelCombinaisonFullJ1.Text = "25"; }
                 }
             }
             else
             {
-                if (tour == 1) { labelCombinaisonFullJ2.Text = ""; }
-                else if (tour == 2) { labelCombinaisonFullJ1.Text = ""; }
+                if (tour == 1 && labelCombinaisonFullJ2.ForeColor == Color.Red) { labelCombinaisonFullJ2.Text = ""; }
+                else if (tour == 2 && labelCombinaisonFullJ1.ForeColor == Color.Red) { labelCombinaisonFullJ1.Text = ""; }
             }
 
             //Petite Suite
             if (un >= 1 && deux >= 1 && trois >= 1 && quatre >= 1 || deux >= 1 && trois >= 1 && quatre >= 1 && cinq >= 1 || trois >= 1 && quatre >= 1 && cinq >= 1 && six >= 1)
             {
-                if (tour == 1) { labelCombinaisonPetiteSuiteJ2.Text = "30"; }
-                else if (tour == 2) { labelCombinaisonPetiteSuiteJ1.Text = "30"; }
+                if (tour == 1 && labelCombinaisonPetiteSuiteJ2.ForeColor == Color.Red) { labelCombinaisonPetiteSuiteJ2.Text = "30"; }
+                else if (tour == 2 && labelCombinaisonPetiteSuiteJ1.ForeColor == Color.Red) { labelCombinaisonPetiteSuiteJ1.Text = "30"; }
             }
             else
             {
-                if (tour == 1) { labelCombinaisonPetiteSuiteJ2.Text = ""; }
-                else if (tour == 2) { labelCombinaisonPetiteSuiteJ1.Text = ""; }
+                if (tour == 1 && labelCombinaisonPetiteSuiteJ2.ForeColor == Color.Red) { labelCombinaisonPetiteSuiteJ2.Text = ""; }
+                else if (tour == 2 && labelCombinaisonPetiteSuiteJ1.ForeColor == Color.Red) { labelCombinaisonPetiteSuiteJ1.Text = ""; }
             }
 
             //Grande Suite
             if (un >= 1 && deux >= 1 && trois >= 1 && quatre >= 1 && cinq >= 1 || deux >= 1 && trois >= 1 && quatre >= 1 && cinq >= 1 && six >= 1)
             {
-                if (tour == 1) { labelCombinaisonGrandeSuiteJ2.Text = ""; }
-                else if (tour == 2) { labelCombinaisonGrandeSuiteJ1.Text = ""; }
+                if (tour == 1 && labelCombinaisonGrandeSuiteJ2.ForeColor == Color.Red) { labelCombinaisonGrandeSuiteJ2.Text = ""; }
+                else if (tour == 2 && labelCombinaisonGrandeSuiteJ1.ForeColor == Color.Red) { labelCombinaisonGrandeSuiteJ1.Text = ""; }
             }
             else
             {
-                if (tour == 1) { labelCombinaisonGrandeSuiteJ2.Text = ""; }
-                else if (tour == 2) { labelCombinaisonGrandeSuiteJ1.Text = ""; }
+                if (tour == 1 && labelCombinaisonGrandeSuiteJ2.ForeColor == Color.Red) { labelCombinaisonGrandeSuiteJ2.Text = ""; }
+                else if (tour == 2 && labelCombinaisonGrandeSuiteJ1.ForeColor == Color.Red) { labelCombinaisonGrandeSuiteJ1.Text = ""; }
             }
 
             //Chance
             string chance = (unNombre + deuxNombre + troisNombre + quatreNombre + cinqNombre + sixNombre).ToString();
-            if (tour == 1) { labelCombinaisonChanceJ2.Text = chance; }
-            else if (tour == 2) { labelCombinaisonChanceJ1.Text = chance; }
+            if (tour == 1 && labelCombinaisonChanceJ2.ForeColor == Color.Red) { labelCombinaisonChanceJ2.Text = chance; }
+            else if (tour == 2 && labelCombinaisonChanceJ1.ForeColor == Color.Red) { labelCombinaisonChanceJ1.Text = chance; }
 
             //Yams
             if (un == 5)
             {
-                if (tour == 1) { labelCombinaisonYamsJ2.Text = unNombre.ToString(); }
-                else if (tour == 2) { labelCombinaisonYamsJ1.Text = unNombre.ToString(); }
+                if (tour == 1 && labelCombinaisonYamsJ2.ForeColor == Color.Red) { labelCombinaisonYamsJ2.Text = unNombre.ToString(); }
+                else if (tour == 2 && labelCombinaisonYamsJ1.ForeColor == Color.Red) { labelCombinaisonYamsJ1.Text = unNombre.ToString(); }
             }
             else if (deux == 5)
             {
-                if (tour == 1) { labelCombinaisonYamsJ2.Text = deuxNombre.ToString(); }
-                else if (tour == 2) { labelCombinaisonYamsJ1.Text = deuxNombre.ToString(); }
+                if (tour == 1 && labelCombinaisonYamsJ2.ForeColor == Color.Red) { labelCombinaisonYamsJ2.Text = deuxNombre.ToString(); }
+                else if (tour == 2 && labelCombinaisonYamsJ1.ForeColor == Color.Red) { labelCombinaisonYamsJ1.Text = deuxNombre.ToString(); }
             }
             else if (trois == 5)
             {
-                if (tour == 1) { labelCombinaisonYamsJ2.Text = troisNombre.ToString(); }
-                else if (tour == 2) { labelCombinaisonYamsJ1.Text = troisNombre.ToString(); }
+                if (tour == 1 && labelCombinaisonYamsJ2.ForeColor == Color.Red) { labelCombinaisonYamsJ2.Text = troisNombre.ToString(); }
+                else if (tour == 2 && labelCombinaisonYamsJ1.ForeColor == Color.Red) { labelCombinaisonYamsJ1.Text = troisNombre.ToString(); }
             }
             else if (quatre == 5)
             {
-                if (tour == 1) { labelCombinaisonYamsJ2.Text = quatreNombre.ToString(); }
-                else if (tour == 2) { labelCombinaisonYamsJ1.Text = quatreNombre.ToString(); }
+                if (tour == 1 && labelCombinaisonYamsJ2.ForeColor == Color.Red) { labelCombinaisonYamsJ2.Text = quatreNombre.ToString(); }
+                else if (tour == 2 && labelCombinaisonYamsJ1.ForeColor == Color.Red) { labelCombinaisonYamsJ1.Text = quatreNombre.ToString(); }
             }
             else if (cinq == 5)
             {
-                if (tour == 1) { labelCombinaisonYamsJ2.Text = cinqNombre.ToString(); }
-                else if (tour == 2) { labelCombinaisonYamsJ1.Text = cinqNombre.ToString(); }
+                if (tour == 1 && labelCombinaisonYamsJ2.ForeColor == Color.Red) { labelCombinaisonYamsJ2.Text = cinqNombre.ToString(); }
+                else if (tour == 2 && labelCombinaisonYamsJ1.ForeColor == Color.Red) { labelCombinaisonYamsJ1.Text = cinqNombre.ToString(); }
             }
             else if (six == 5)
             {
-                if (tour == 1) { labelCombinaisonYamsJ2.Text = sixNombre.ToString(); }
-                else if (tour == 2) { labelCombinaisonYamsJ1.Text = sixNombre.ToString(); }
+                if (tour == 1 && labelCombinaisonYamsJ2.ForeColor == Color.Red) { labelCombinaisonYamsJ2.Text = sixNombre.ToString(); }
+                else if (tour == 2 && labelCombinaisonYamsJ1.ForeColor == Color.Red) { labelCombinaisonYamsJ1.Text = sixNombre.ToString(); }
             }
             else
             {
-                if (tour == 1) { labelCombinaisonYamsJ2.Text = ""; }
-                else if (tour == 2) { labelCombinaisonYamsJ1.Text = ""; }
+                if (tour == 1 && labelCombinaisonYamsJ2.ForeColor == Color.Red) { labelCombinaisonYamsJ2.Text = ""; }
+                else if (tour == 2 && labelCombinaisonYamsJ1.ForeColor == Color.Red) { labelCombinaisonYamsJ1.Text = ""; }
             }
         }
 
@@ -479,8 +479,8 @@ namespace ProjetYams
 
         private void labelCombinaison1J1_Click(object sender, EventArgs e)
         {
-            if (labelCombinaison1J1.Text == ""){labelCombinaison1J1.Text = "0"; if (tour == 1) { joueur1.Combiniason["Un"] = 0;}}
-            else { if (tour == 1) { joueur1.Combiniason["Un"] = int.Parse(labelCombinaison1J1.Text);}}
+            if (labelCombinaison1J1.Text == ""){labelCombinaison1J1.Text = "0"; if (tour == 1) { joueur1.Combinaison["Un"] = 0;}}
+            else { if (tour == 1) { joueur1.Combinaison["Un"] = int.Parse(labelCombinaison1J1.Text);}}
             CalculSommeBonusTotal();
             labelCombinaison1J1.ForeColor = Color.Black;
             validationSelection();
@@ -488,8 +488,8 @@ namespace ProjetYams
 
         private void labelCombinaison1J2_Click(object sender, EventArgs e)
         {
-            if (labelCombinaison1J2.Text == ""){labelCombinaison1J2.Text = "0";if (tour == 2) { joueur2.Combiniason["Un"] = 0;}}
-            else{ if (tour == 2) { joueur2.Combiniason["Un"] = int.Parse(labelCombinaison1J2.Text);}}
+            if (labelCombinaison1J2.Text == ""){labelCombinaison1J2.Text = "0";if (tour == 2) { joueur2.Combinaison["Un"] = 0;}}
+            else{ if (tour == 2) { joueur2.Combinaison["Un"] = int.Parse(labelCombinaison1J2.Text);}}
             CalculSommeBonusTotal();
             labelCombinaison1J2.ForeColor = Color.Black;
             validationSelection();
@@ -497,8 +497,8 @@ namespace ProjetYams
 
         private void labelCombinaison2J1_Click(object sender, EventArgs e)
         {
-            if (labelCombinaison2J1.Text == "") { labelCombinaison2J1.Text = "0";if (tour == 1) { joueur1.Combiniason["Deux"] = 0;}}
-            else { if (tour == 1) { joueur1.Combiniason["Deux"] = int.Parse(labelCombinaison2J1.Text);}}
+            if (labelCombinaison2J1.Text == "") { labelCombinaison2J1.Text = "0";if (tour == 1) { joueur1.Combinaison["Deux"] = 0;}}
+            else { if (tour == 1) { joueur1.Combinaison["Deux"] = int.Parse(labelCombinaison2J1.Text);}}
             CalculSommeBonusTotal();
             labelCombinaison2J1.ForeColor = Color.Black;
             validationSelection();
@@ -506,8 +506,8 @@ namespace ProjetYams
 
         private void labelCombinaison2J2_Click(object sender, EventArgs e)
         {
-            if (labelCombinaison2J2.Text == "") { labelCombinaison2J2.Text = "0"; if (tour == 2) { joueur2.Combiniason["Deux"] = 0; } }
-            else { if (tour == 2) { joueur2.Combiniason["Deux"] = int.Parse(labelCombinaison2J2.Text); } }
+            if (labelCombinaison2J2.Text == "") { labelCombinaison2J2.Text = "0"; if (tour == 2) { joueur2.Combinaison["Deux"] = 0; } }
+            else { if (tour == 2) { joueur2.Combinaison["Deux"] = int.Parse(labelCombinaison2J2.Text); } }
             CalculSommeBonusTotal();
             labelCombinaison2J2.ForeColor = Color.Black;
             validationSelection();
@@ -515,8 +515,8 @@ namespace ProjetYams
 
         private void labelCombinaison3J1_Click(object sender, EventArgs e)
         {
-            if (labelCombinaison3J1.Text == "") { labelCombinaison3J1.Text = "0"; if (tour == 1) { joueur1.Combiniason["Trois"] = 0; } }
-            else { if (tour == 1) { joueur1.Combiniason["Trois"] = int.Parse(labelCombinaison3J1.Text); } }
+            if (labelCombinaison3J1.Text == "") { labelCombinaison3J1.Text = "0"; if (tour == 1) { joueur1.Combinaison["Trois"] = 0; } }
+            else { if (tour == 1) { joueur1.Combinaison["Trois"] = int.Parse(labelCombinaison3J1.Text); } }
             CalculSommeBonusTotal();
             labelCombinaison3J1.ForeColor = Color.Black;
             validationSelection();
@@ -524,8 +524,8 @@ namespace ProjetYams
 
         private void labelCombinaison3J2_Click(object sender, EventArgs e)
         {
-            if (labelCombinaison3J2.Text == "") { labelCombinaison3J2.Text = "0"; if (tour == 2) { joueur2.Combiniason["Trois"] = 0; } }
-            else { if (tour == 2) { joueur2.Combiniason["Trois"] = int.Parse(labelCombinaison3J2.Text); } }
+            if (labelCombinaison3J2.Text == "") { labelCombinaison3J2.Text = "0"; if (tour == 2) { joueur2.Combinaison["Trois"] = 0; } }
+            else { if (tour == 2) { joueur2.Combinaison["Trois"] = int.Parse(labelCombinaison3J2.Text); } }
             CalculSommeBonusTotal();
             labelCombinaison3J2.ForeColor = Color.Black;
             validationSelection();
@@ -533,8 +533,8 @@ namespace ProjetYams
 
         private void labelCombinaison4J1_Click(object sender, EventArgs e)
         {
-            if (labelCombinaison4J1.Text == "") { labelCombinaison4J1.Text = "0"; if (tour == 1) { joueur1.Combiniason["Quatre"] = 0; } }
-            else { if (tour == 1) { joueur1.Combiniason["Quatre"] = int.Parse(labelCombinaison4J1.Text); } }
+            if (labelCombinaison4J1.Text == "") { labelCombinaison4J1.Text = "0"; if (tour == 1) { joueur1.Combinaison["Quatre"] = 0; } }
+            else { if (tour == 1) { joueur1.Combinaison["Quatre"] = int.Parse(labelCombinaison4J1.Text); } }
             CalculSommeBonusTotal();
             labelCombinaison4J1.ForeColor = Color.Black;
             validationSelection();
@@ -542,8 +542,8 @@ namespace ProjetYams
 
         private void labelCombinaison4J2_Click(object sender, EventArgs e)
         {
-            if (labelCombinaison4J2.Text == "") { labelCombinaison4J2.Text = "0"; if (tour == 2) { joueur2.Combiniason["Quatre"] = 0; } }
-            else { if (tour == 2) { joueur2.Combiniason["Quatre"] = int.Parse(labelCombinaison4J2.Text); } }
+            if (labelCombinaison4J2.Text == "") { labelCombinaison4J2.Text = "0"; if (tour == 2) { joueur2.Combinaison["Quatre"] = 0; } }
+            else { if (tour == 2) { joueur2.Combinaison["Quatre"] = int.Parse(labelCombinaison4J2.Text); } }
             CalculSommeBonusTotal();
             labelCombinaison4J2.ForeColor = Color.Black;
             validationSelection();
@@ -551,8 +551,8 @@ namespace ProjetYams
 
         private void labelCombinaison5J1_Click(object sender, EventArgs e)
         {
-            if (labelCombinaison5J1.Text == "") { labelCombinaison5J1.Text = "0"; if (tour == 1) { joueur1.Combiniason["Cinq"] = 0; } }
-            else { if (tour == 1) { joueur1.Combiniason["Cinq"] = int.Parse(labelCombinaison5J1.Text); } }
+            if (labelCombinaison5J1.Text == "") { labelCombinaison5J1.Text = "0"; if (tour == 1) { joueur1.Combinaison["Cinq"] = 0; } }
+            else { if (tour == 1) { joueur1.Combinaison["Cinq"] = int.Parse(labelCombinaison5J1.Text); } }
             CalculSommeBonusTotal();
             labelCombinaison5J1.ForeColor = Color.Black;
             validationSelection();
@@ -560,8 +560,8 @@ namespace ProjetYams
 
         private void labelCombinaison5J2_Click(object sender, EventArgs e)
         {
-            if (labelCombinaison5J2.Text == "") { labelCombinaison5J2.Text = "0"; if (tour == 2) { joueur2.Combiniason["Cinq"] = 0; } }
-            else { if (tour == 2) { joueur2.Combiniason["Cinq"] = int.Parse(labelCombinaison5J2.Text); } }
+            if (labelCombinaison5J2.Text == "") { labelCombinaison5J2.Text = "0"; if (tour == 2) { joueur2.Combinaison["Cinq"] = 0; } }
+            else { if (tour == 2) { joueur2.Combinaison["Cinq"] = int.Parse(labelCombinaison5J2.Text); } }
             CalculSommeBonusTotal();
             labelCombinaison5J2.ForeColor = Color.Black;
             validationSelection();
@@ -569,8 +569,8 @@ namespace ProjetYams
 
         private void labelCombinaison6J1_Click(object sender, EventArgs e)
         {
-            if (labelCombinaison6J1.Text == "") { labelCombinaison6J1.Text = "0"; if (tour == 1) { joueur1.Combiniason["Six"] = 0; } }
-            else { if (tour == 1) { joueur1.Combiniason["Six"] = int.Parse(labelCombinaison6J1.Text); } }
+            if (labelCombinaison6J1.Text == "") { labelCombinaison6J1.Text = "0"; if (tour == 1) { joueur1.Combinaison["Six"] = 0; } }
+            else { if (tour == 1) { joueur1.Combinaison["Six"] = int.Parse(labelCombinaison6J1.Text); } }
             CalculSommeBonusTotal();
             labelCombinaison6J1.ForeColor = Color.Black;
             validationSelection();
@@ -578,8 +578,8 @@ namespace ProjetYams
 
         private void labelCombinaison6J2_Click(object sender, EventArgs e)
         {
-            if (labelCombinaison6J2.Text == "") { labelCombinaison6J2.Text = "0"; if (tour == 2) { joueur2.Combiniason["Six"] = 0; } }
-            else { if (tour == 2) { joueur2.Combiniason["Six"] = int.Parse(labelCombinaison6J2.Text); } }
+            if (labelCombinaison6J2.Text == "") { labelCombinaison6J2.Text = "0"; if (tour == 2) { joueur2.Combinaison["Six"] = 0; } }
+            else { if (tour == 2) { joueur2.Combinaison["Six"] = int.Parse(labelCombinaison6J2.Text); } }
             CalculSommeBonusTotal();
             labelCombinaison6J2.ForeColor = Color.Black;
             validationSelection();
@@ -587,8 +587,8 @@ namespace ProjetYams
 
         private void labelCombinaisonBrelanJ1_Click(object sender, EventArgs e)
         {
-            if (labelCombinaisonBrelanJ1.Text == "") { labelCombinaisonBrelanJ1.Text = "0"; if (tour == 1) { joueur1.Combiniason["Brelan"] = 0; } }
-            else { if (tour == 1) { joueur1.Combiniason["Brelan"] = int.Parse(labelCombinaisonBrelanJ1.Text); } }
+            if (labelCombinaisonBrelanJ1.Text == "") { labelCombinaisonBrelanJ1.Text = "0"; if (tour == 1) { joueur1.Combinaison["Brelan"] = 0; } }
+            else { if (tour == 1) { joueur1.Combinaison["Brelan"] = int.Parse(labelCombinaisonBrelanJ1.Text); } }
             CalculSommeBonusTotal();
             labelCombinaisonBrelanJ1.ForeColor = Color.Black;
             validationSelection();
@@ -596,8 +596,8 @@ namespace ProjetYams
 
         private void labelCombinaisonBrelanJ2_Click(object sender, EventArgs e)
         {
-            if (labelCombinaisonBrelanJ2.Text == "") { labelCombinaisonBrelanJ2.Text = "0"; if (tour == 2) { joueur2.Combiniason["Brelan"] = 0; } }
-            else { if (tour == 2) { joueur2.Combiniason["Brelan"] = int.Parse(labelCombinaisonBrelanJ2.Text); } }
+            if (labelCombinaisonBrelanJ2.Text == "") { labelCombinaisonBrelanJ2.Text = "0"; if (tour == 2) { joueur2.Combinaison["Brelan"] = 0; } }
+            else { if (tour == 2) { joueur2.Combinaison["Brelan"] = int.Parse(labelCombinaisonBrelanJ2.Text); } }
             CalculSommeBonusTotal();
             labelCombinaisonBrelanJ2.ForeColor = Color.Black;
             validationSelection();
@@ -605,8 +605,8 @@ namespace ProjetYams
 
         private void labelCombinaisonCarreJ1_Click(object sender, EventArgs e)
         {
-            if (labelCombinaisonCarreJ1.Text == "") { labelCombinaisonCarreJ1.Text = "0"; if (tour == 2) { joueur1.Combiniason["Carré"] = 0; } }
-            else { if (tour == 2) { joueur1.Combiniason["Carré"] = int.Parse(labelCombinaisonCarreJ1.Text); } }
+            if (labelCombinaisonCarreJ1.Text == "") { labelCombinaisonCarreJ1.Text = "0"; if (tour == 2) { joueur1.Combinaison["Carré"] = 0; } }
+            else { if (tour == 2) { joueur1.Combinaison["Carré"] = int.Parse(labelCombinaisonCarreJ1.Text); } }
             CalculSommeBonusTotal();
             labelCombinaisonCarreJ1.ForeColor = Color.Black;
             validationSelection();
@@ -614,8 +614,8 @@ namespace ProjetYams
 
         private void labelCombinaisonCarreJ2_Click(object sender, EventArgs e)
         {
-            if (labelCombinaisonCarreJ2.Text == "") { labelCombinaisonCarreJ2.Text = "0"; if (tour == 1) { joueur2.Combiniason["Carré"] = 0; } }
-            else { if (tour == 1) { joueur2.Combiniason["Carré"] = int.Parse(labelCombinaisonCarreJ2.Text); } }
+            if (labelCombinaisonCarreJ2.Text == "") { labelCombinaisonCarreJ2.Text = "0"; if (tour == 1) { joueur2.Combinaison["Carré"] = 0; } }
+            else { if (tour == 1) { joueur2.Combinaison["Carré"] = int.Parse(labelCombinaisonCarreJ2.Text); } }
             CalculSommeBonusTotal();
             labelCombinaisonCarreJ2.ForeColor = Color.Black;
             validationSelection();
@@ -623,8 +623,8 @@ namespace ProjetYams
 
         private void labelCombinaisonFullJ1_Click(object sender, EventArgs e)
         {
-            if (labelCombinaisonFullJ1.Text == "") { labelCombinaisonFullJ1.Text = "0"; if (tour == 1) { joueur1.Combiniason["Full"] = 0; } }
-            else { if (tour == 1) { joueur1.Combiniason["Full"] = int.Parse(labelCombinaisonFullJ1.Text); } }
+            if (labelCombinaisonFullJ1.Text == "") { labelCombinaisonFullJ1.Text = "0"; if (tour == 1) { joueur1.Combinaison["Full"] = 0; } }
+            else { if (tour == 1) { joueur1.Combinaison["Full"] = int.Parse(labelCombinaisonFullJ1.Text); } }
             CalculSommeBonusTotal();
             labelCombinaisonFullJ1.ForeColor = Color.Black;
             validationSelection();
@@ -632,8 +632,8 @@ namespace ProjetYams
 
         private void labelCombinaisonFullJ2_Click(object sender, EventArgs e)
         {
-            if (labelCombinaisonFullJ2.Text == "") { labelCombinaisonFullJ2.Text = "0"; if (tour == 2) { joueur2.Combiniason["Full"] = 0; } }
-            else { if (tour == 2) { joueur2.Combiniason["Full"] = int.Parse(labelCombinaisonFullJ2.Text); } }
+            if (labelCombinaisonFullJ2.Text == "") { labelCombinaisonFullJ2.Text = "0"; if (tour == 2) { joueur2.Combinaison["Full"] = 0; } }
+            else { if (tour == 2) { joueur2.Combinaison["Full"] = int.Parse(labelCombinaisonFullJ2.Text); } }
             CalculSommeBonusTotal();
             labelCombinaisonFullJ2.ForeColor = Color.Black;
             validationSelection();
@@ -641,8 +641,8 @@ namespace ProjetYams
 
         private void labelCombinaisonPetiteSuiteJ1_Click(object sender, EventArgs e)
         {
-            if (labelCombinaisonPetiteSuiteJ1.Text == "") { labelCombinaisonPetiteSuiteJ1.Text = "0"; if (tour == 1) { joueur1.Combiniason["Petite suite"] = 0; } }
-            else { if (tour == 1) { joueur1.Combiniason["Petite suite"] = int.Parse(labelCombinaisonPetiteSuiteJ1.Text); } }
+            if (labelCombinaisonPetiteSuiteJ1.Text == "") { labelCombinaisonPetiteSuiteJ1.Text = "0"; if (tour == 1) { joueur1.Combinaison["Petite suite"] = 0; } }
+            else { if (tour == 1) { joueur1.Combinaison["Petite suite"] = int.Parse(labelCombinaisonPetiteSuiteJ1.Text); } }
             CalculSommeBonusTotal();
             labelCombinaisonPetiteSuiteJ1.ForeColor = Color.Black;
             validationSelection();
@@ -650,8 +650,8 @@ namespace ProjetYams
 
         private void labelCombinaisonPetiteSuiteJ2_Click(object sender, EventArgs e)
         {
-            if (labelCombinaisonPetiteSuiteJ2.Text == "") { labelCombinaisonPetiteSuiteJ2.Text = "0"; if (tour == 2) { joueur2.Combiniason["Petite suite"] = 0; } }
-            else { if (tour == 2) { joueur2.Combiniason["Petite suite"] = int.Parse(labelCombinaisonPetiteSuiteJ2.Text); } }
+            if (labelCombinaisonPetiteSuiteJ2.Text == "") { labelCombinaisonPetiteSuiteJ2.Text = "0"; if (tour == 2) { joueur2.Combinaison["Petite suite"] = 0; } }
+            else { if (tour == 2) { joueur2.Combinaison["Petite suite"] = int.Parse(labelCombinaisonPetiteSuiteJ2.Text); } }
             CalculSommeBonusTotal();
             labelCombinaisonPetiteSuiteJ2.ForeColor = Color.Black;
             validationSelection();
@@ -659,8 +659,8 @@ namespace ProjetYams
 
         private void labelCombinaisonGrandeSuiteJ1_Click(object sender, EventArgs e)
         {
-            if (labelCombinaisonGrandeSuiteJ1.Text == "") { labelCombinaisonGrandeSuiteJ1.Text = "0"; if (tour == 1) { joueur1.Combiniason["Grand suite"] = 0; } }
-            else { if (tour == 1) { joueur1.Combiniason["Grand suite"] = int.Parse(labelCombinaisonGrandeSuiteJ1.Text); } }
+            if (labelCombinaisonGrandeSuiteJ1.Text == "") { labelCombinaisonGrandeSuiteJ1.Text = "0"; if (tour == 1) { joueur1.Combinaison["Grand suite"] = 0; } }
+            else { if (tour == 1) { joueur1.Combinaison["Grand suite"] = int.Parse(labelCombinaisonGrandeSuiteJ1.Text); } }
             CalculSommeBonusTotal();
             labelCombinaisonGrandeSuiteJ1.ForeColor = Color.Black;
             validationSelection();
@@ -668,8 +668,8 @@ namespace ProjetYams
 
         private void labelCombinaisonGrandeSuiteJ2_Click(object sender, EventArgs e)
         {
-            if (labelCombinaisonGrandeSuiteJ2.Text == "") { labelCombinaisonGrandeSuiteJ2.Text = "0"; if (tour == 2) { joueur2.Combiniason["Grand suite"] = 0; } }
-            else { if (tour == 2) { joueur2.Combiniason["Grand suite"] = int.Parse(labelCombinaisonGrandeSuiteJ2.Text); } }
+            if (labelCombinaisonGrandeSuiteJ2.Text == "") { labelCombinaisonGrandeSuiteJ2.Text = "0"; if (tour == 2) { joueur2.Combinaison["Grand suite"] = 0; } }
+            else { if (tour == 2) { joueur2.Combinaison["Grand suite"] = int.Parse(labelCombinaisonGrandeSuiteJ2.Text); } }
             CalculSommeBonusTotal();
             labelCombinaisonGrandeSuiteJ2.ForeColor = Color.Black;
             validationSelection();
@@ -677,8 +677,8 @@ namespace ProjetYams
 
         private void labelCombinaisonChanceJ1_Click(object sender, EventArgs e)
         {
-            if (labelCombinaisonChanceJ1.Text == "") { labelCombinaisonChanceJ1.Text = "0"; if (tour == 1) { joueur1.Combiniason["Chance"] = 0; } }
-            else { if (tour == 1) { joueur1.Combiniason["Chance"] = int.Parse(labelCombinaisonChanceJ1.Text); } }
+            if (labelCombinaisonChanceJ1.Text == "") { labelCombinaisonChanceJ1.Text = "0"; if (tour == 1) { joueur1.Combinaison["Chance"] = 0; } }
+            else { if (tour == 1) { joueur1.Combinaison["Chance"] = int.Parse(labelCombinaisonChanceJ1.Text); } }
             CalculSommeBonusTotal();
             labelCombinaisonChanceJ1.ForeColor = Color.Black;
             validationSelection();
@@ -686,8 +686,8 @@ namespace ProjetYams
 
         private void labelCombinaisonChanceJ2_Click(object sender, EventArgs e)
         {
-            if (labelCombinaisonChanceJ2.Text == "") { labelCombinaisonChanceJ2.Text = "0"; if (tour == 2) { joueur2.Combiniason["Chance"] = 0; } }
-            else { if (tour == 2) { joueur2.Combiniason["Chance"] = int.Parse(labelCombinaisonChanceJ2.Text); } }
+            if (labelCombinaisonChanceJ2.Text == "") { labelCombinaisonChanceJ2.Text = "0"; if (tour == 2) { joueur2.Combinaison["Chance"] = 0; } }
+            else { if (tour == 2) { joueur2.Combinaison["Chance"] = int.Parse(labelCombinaisonChanceJ2.Text); } }
             CalculSommeBonusTotal();
             labelCombinaisonChanceJ2.ForeColor = Color.Black;
             validationSelection();
@@ -695,8 +695,8 @@ namespace ProjetYams
 
         private void labelCombinaisonYamsJ1_Click(object sender, EventArgs e)
         {
-            if (labelCombinaisonYamsJ1.Text == "") { labelCombinaisonYamsJ1.Text = "0"; if (tour == 1) { joueur1.Combiniason["Yams"] = 0; } }
-            else { if (tour == 1) { joueur1.Combiniason["Yams"] = int.Parse(labelCombinaisonYamsJ1.Text); } }
+            if (labelCombinaisonYamsJ1.Text == "") { labelCombinaisonYamsJ1.Text = "0"; if (tour == 1) { joueur1.Combinaison["Yams"] = 0; } }
+            else { if (tour == 1) { joueur1.Combinaison["Yams"] = int.Parse(labelCombinaisonYamsJ1.Text); } }
             CalculSommeBonusTotal();
             labelCombinaisonYamsJ1.ForeColor = Color.Black;
             validationSelection();
@@ -704,8 +704,8 @@ namespace ProjetYams
 
         private void labelCombinaisonYamsJ2_Click(object sender, EventArgs e)
         {
-            if (labelCombinaisonYamsJ2.Text == "") { labelCombinaisonYamsJ2.Text = "0"; if (tour == 2) { joueur2.Combiniason["Yams"] = 0; } }
-            else { if (tour == 2) { joueur2.Combiniason["Yams"] = int.Parse(labelCombinaisonYamsJ2.Text); } }
+            if (labelCombinaisonYamsJ2.Text == "") { labelCombinaisonYamsJ2.Text = "0"; if (tour == 2) { joueur2.Combinaison["Yams"] = 0; } }
+            else { if (tour == 2) { joueur2.Combinaison["Yams"] = int.Parse(labelCombinaisonYamsJ2.Text); } }
             CalculSommeBonusTotal();
             labelCombinaisonYamsJ2.ForeColor = Color.Black;
             validationSelection();
@@ -715,22 +715,22 @@ namespace ProjetYams
         {
             if (verificationGroupeCombinaison())
             {
-                int sommeJ1 = joueur1.Combiniason["Un"] + joueur1.Combiniason["Deux"] + joueur1.Combiniason["Trois"] + joueur1.Combiniason["Quatre"] + joueur1.Combiniason["Cinq"] + joueur1.Combiniason["Six"];
-                joueur1.Combiniason["Somme"] = sommeJ1;
+                int sommeJ1 = joueur1.Combinaison["Un"] + joueur1.Combinaison["Deux"] + joueur1.Combinaison["Trois"] + joueur1.Combinaison["Quatre"] + joueur1.Combinaison["Cinq"] + joueur1.Combinaison["Six"];
+                joueur1.Combinaison["Somme"] = sommeJ1;
                 labelCombinaisonSommeJ1.Text = sommeJ1.ToString();
                 if (sommeJ1 >= 63)
                 {
-                    joueur1.Combiniason["Bonus"] = 35;
+                    joueur1.Combinaison["Bonus"] = 35;
                     labelCombinaisonBonusJ1.Text = "35";
                 }
                 else
                 {
-                    joueur1.Combiniason["Bonus"] = 0;
+                    joueur1.Combinaison["Bonus"] = 0;
                     labelCombinaisonBonusJ1.Text = "0";
                 }
                 int totalJ1 = 0;
                 int index = 0;
-                foreach (int value in joueur1.Combiniason.Values)
+                foreach (int value in joueur1.Combinaison.Values)
                 {
                     if (value >= 0 && index != 6)
                     {
@@ -738,25 +738,25 @@ namespace ProjetYams
                     }
                     index++;
                 }
-                joueur1.Combiniason["Total"] = totalJ1;
+                joueur1.Combinaison["Total"] = totalJ1;
                 labelCombinaisonTotalJ1.Text = totalJ1.ToString();
 
-                int sommeJ2 = joueur2.Combiniason["Un"] + joueur2.Combiniason["Deux"] + joueur2.Combiniason["Trois"] + joueur2.Combiniason["Quatre"] + joueur2.Combiniason["Cinq"] + joueur2.Combiniason["Six"];
-                joueur2.Combiniason["Somme"] = sommeJ2;
+                int sommeJ2 = joueur2.Combinaison["Un"] + joueur2.Combinaison["Deux"] + joueur2.Combinaison["Trois"] + joueur2.Combinaison["Quatre"] + joueur2.Combinaison["Cinq"] + joueur2.Combinaison["Six"];
+                joueur2.Combinaison["Somme"] = sommeJ2;
                 labelCombinaisonSommeJ2.Text = sommeJ2.ToString();
                 if (sommeJ2 >= 63)
                 {
-                    joueur2.Combiniason["Bonus"] = 35;
+                    joueur2.Combinaison["Bonus"] = 35;
                     labelCombinaisonBonusJ2.Text = "35";
                 }
                 else
                 {
-                    joueur2.Combiniason["Bonus"] = 0;
+                    joueur2.Combinaison["Bonus"] = 0;
                     labelCombinaisonBonusJ2.Text = "0";
                 }
                 int totalJ2 = 0;
                 index = 0;
-                foreach (int value in joueur2.Combiniason.Values)
+                foreach (int value in joueur2.Combinaison.Values)
                 {
                     if (value >= 0 && index != 6)
                     {
@@ -764,7 +764,7 @@ namespace ProjetYams
                     }
                     index++;
                 }
-                joueur2.Combiniason["Total"] = totalJ2;
+                joueur2.Combinaison["Total"] = totalJ2;
                 labelCombinaisonTotalJ2.Text = totalJ2.ToString();
 
                 label2.Visible = false;
