@@ -151,7 +151,8 @@ namespace ProjetYams
                 tour = 1;
             }
 
-            buttonLancer.Visible = true;buttonLancer.Location = new Point(691, 699);
+            buttonLancer.Visible = true;
+            buttonLancer.Location = new Point(691, 699);
             panelDes1.Visible = false;panelDes2.Visible = false;panelDes3.Visible = false;panelDes4.Visible = false;panelDes5.Visible = false;
             des1.Selection = false;des2.Selection = false;des3.Selection = false;des4.Selection = false;des5.Selection = false;
             actualisationDes();
@@ -757,6 +758,10 @@ namespace ProjetYams
                     joueur2.Combinaison["Bonus"] = 0;
                     labelCombinaisonBonusJ2.Text = "0";
                 }
+
+                affichageTour();
+                nombreLance = 0;
+
             } else if (verificationGroupeCombinaison() == true && verificationGroupeCombinaison1A6() == true)
             {
                     int totalJ1 = 0;
@@ -803,8 +808,8 @@ namespace ProjetYams
                     if (totalJ1 > totalJ2) { labelVictory.Text = "Victoire de " + joueur1.Pseudo; }
                     else if (totalJ1 < totalJ2) { labelVictory.Text = "Victoire de " + joueur2.Pseudo; }
                     else { labelVictory.Text = "Egalité !"; }
-                }
-            else
+             }
+             else
             {
                 affichageTour();
                 nombreLance = 0;

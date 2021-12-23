@@ -1028,7 +1028,7 @@
             this.labelVictory.AutoSize = true;
             this.labelVictory.Font = new System.Drawing.Font("Montserrat", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.labelVictory.ForeColor = System.Drawing.Color.Black;
-            this.labelVictory.Location = new System.Drawing.Point(276, 305);
+            this.labelVictory.Location = new System.Drawing.Point(234, 305);
             this.labelVictory.Name = "labelVictory";
             this.labelVictory.Size = new System.Drawing.Size(111, 37);
             this.labelVictory.TabIndex = 19;
