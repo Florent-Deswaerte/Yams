@@ -153,9 +153,9 @@
             this.label3title.ForeColor = System.Drawing.Color.White;
             this.label3title.Location = new System.Drawing.Point(187, 65);
             this.label3title.Name = "label3title";
-            this.label3title.Size = new System.Drawing.Size(95, 37);
+            this.label3title.Size = new System.Drawing.Size(85, 37);
             this.label3title.TabIndex = 9;
-            this.label3title.Text = "2 vs 2";
+            this.label3title.Text = "1 vs 1";
             // 
             // pictureBox3
             // 
@@ -282,9 +282,9 @@
             this.label2title.ForeColor = System.Drawing.Color.White;
             this.label2title.Location = new System.Drawing.Point(175, 130);
             this.label2title.Name = "label2title";
-            this.label2title.Size = new System.Drawing.Size(85, 37);
+            this.label2title.Size = new System.Drawing.Size(78, 37);
             this.label2title.TabIndex = 8;
-            this.label2title.Text = "1 vs 1";
+            this.label2title.Text = "Solo";
             // 
             // buttonPlay1v1
             // 
