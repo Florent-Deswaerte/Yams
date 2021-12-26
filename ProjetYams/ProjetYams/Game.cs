@@ -32,7 +32,7 @@ namespace ProjetYams
         int nombreLance = 0;
         int tour = 1;
 
-        
+        int coup = 0;
 
         public Game(Player joueur1, Player joueur2, Main main)
         {
@@ -715,6 +715,7 @@ namespace ProjetYams
 
         private void CalculSommeBonusTotal()
         {
+            coup++;
             if (verificationGroupeCombinaison1A6() == true && verificationGroupeCombinaison() == false)
             {
                 if(joueur1.Combinaison["Un"] == -1 ){joueur1.Combinaison["Un"] = 0;}
@@ -762,7 +763,7 @@ namespace ProjetYams
                 affichageTour();
                 nombreLance = 0;
 
-            } else if (verificationGroupeCombinaison() == true && verificationGroupeCombinaison1A6() == true)
+            } else if (verificationGroupeCombinaison() == true && verificationGroupeCombinaison1A6() == true || coup == 26)
             {
                     int totalJ1 = 0;
                     int index = 0;

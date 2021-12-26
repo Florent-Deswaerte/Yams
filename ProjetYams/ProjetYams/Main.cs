@@ -66,5 +66,29 @@ namespace ProjetYams
                 textBoxJoueur2.Text = "";
             }
         }
+
+        private void buttonPlay1v1_Click(object sender, EventArgs e)
+        {
+            if (textBox21v1.Text.Length == 0)
+            {
+                DialogResult result = MessageBox.Show("Veuillez entrez un pseudo valide ...", "Valeur erronée", MessageBoxButtons.OK);
+                switch (result)
+                {
+                    case DialogResult.OK:
+                        break;
+                }
+                textBox21v1.Clear();
+            }
+            else
+            {
+                Player joueur1 = new Player(textBox21v1.Text);
+
+                this.Hide();
+                Solo solo = new Solo(joueur1, this);
+                solo.Closed += (s, args) => this.Close();
+                solo.Show();
+                textBox21v1.Text = "";
+            }
+        }
     }
 }

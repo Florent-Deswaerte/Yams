@@ -20,3 +20,4 @@ C:\Users\clash\source\repos\ProjetYams\ProjetYams\obj\Debug\net6.0-windows\ref\P
 C:\Users\clash\source\repos\ProjetYams\ProjetYams\obj\Debug\net6.0-windows\ProjetYams.pdb
 C:\Users\clash\source\repos\ProjetYams\ProjetYams\obj\Debug\net6.0-windows\ProjetYams.genruntimeconfig.cache
 C:\Users\clash\source\repos\ProjetYams\ProjetYams\obj\Debug\net6.0-windows\ProjetYams.Properties.Resources.resources
+C:\Users\clash\source\repos\ProjetYams\ProjetYams\obj\Debug\net6.0-windows\ProjetYams.Solo.resources

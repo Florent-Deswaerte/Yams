@@ -36,6 +36,7 @@
             this.labelTitle = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelBackground = new System.Windows.Forms.Panel();
+            this.label3title = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.buttonPlay = new System.Windows.Forms.Button();
@@ -43,11 +44,19 @@
             this.textBoxJoueur1 = new System.Windows.Forms.TextBox();
             this.labelJoueur2 = new System.Windows.Forms.Label();
             this.labelJoueur1 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label2title = new System.Windows.Forms.Label();
+            this.buttonPlay1v1 = new System.Windows.Forms.Button();
+            this.textBox21v1 = new System.Windows.Forms.TextBox();
             this.panelTitleBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelBackground.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelTitleBar
@@ -124,6 +133,7 @@
             // panelBackground
             // 
             this.panelBackground.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.panelBackground.Controls.Add(this.label3title);
             this.panelBackground.Controls.Add(this.pictureBox3);
             this.panelBackground.Controls.Add(this.pictureBox2);
             this.panelBackground.Controls.Add(this.buttonPlay);
@@ -131,15 +141,26 @@
             this.panelBackground.Controls.Add(this.textBoxJoueur1);
             this.panelBackground.Controls.Add(this.labelJoueur2);
             this.panelBackground.Controls.Add(this.labelJoueur1);
-            this.panelBackground.Location = new System.Drawing.Point(292, 204);
+            this.panelBackground.Location = new System.Drawing.Point(515, 212);
             this.panelBackground.Name = "panelBackground";
             this.panelBackground.Size = new System.Drawing.Size(437, 450);
             this.panelBackground.TabIndex = 1;
             // 
+            // label3title
+            // 
+            this.label3title.AutoSize = true;
+            this.label3title.Font = new System.Drawing.Font("Montserrat", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3title.ForeColor = System.Drawing.Color.White;
+            this.label3title.Location = new System.Drawing.Point(187, 65);
+            this.label3title.Name = "label3title";
+            this.label3title.Size = new System.Drawing.Size(95, 37);
+            this.label3title.TabIndex = 9;
+            this.label3title.Text = "2 vs 2";
+            // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::ProjetYams.Properties.Resources.users;
-            this.pictureBox3.Location = new System.Drawing.Point(134, 207);
+            this.pictureBox3.Location = new System.Drawing.Point(142, 246);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(39, 33);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -149,7 +170,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::ProjetYams.Properties.Resources.user;
-            this.pictureBox2.Location = new System.Drawing.Point(134, 95);
+            this.pictureBox2.Location = new System.Drawing.Point(142, 134);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(39, 33);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -162,7 +183,7 @@
             this.buttonPlay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonPlay.Font = new System.Drawing.Font("Montserrat", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buttonPlay.ForeColor = System.Drawing.Color.White;
-            this.buttonPlay.Location = new System.Drawing.Point(121, 340);
+            this.buttonPlay.Location = new System.Drawing.Point(129, 371);
             this.buttonPlay.Name = "buttonPlay";
             this.buttonPlay.Size = new System.Drawing.Size(200, 56);
             this.buttonPlay.TabIndex = 5;
@@ -176,7 +197,7 @@
             this.textBoxJoueur2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxJoueur2.Font = new System.Drawing.Font("Montserrat", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBoxJoueur2.ForeColor = System.Drawing.Color.White;
-            this.textBoxJoueur2.Location = new System.Drawing.Point(121, 254);
+            this.textBoxJoueur2.Location = new System.Drawing.Point(129, 293);
             this.textBoxJoueur2.MaxLength = 8;
             this.textBoxJoueur2.Name = "textBoxJoueur2";
             this.textBoxJoueur2.PlaceholderText = "Pseudo";
@@ -190,7 +211,7 @@
             this.textBoxJoueur1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxJoueur1.Font = new System.Drawing.Font("Montserrat", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBoxJoueur1.ForeColor = System.Drawing.Color.White;
-            this.textBoxJoueur1.Location = new System.Drawing.Point(121, 146);
+            this.textBoxJoueur1.Location = new System.Drawing.Point(129, 185);
             this.textBoxJoueur1.MaxLength = 8;
             this.textBoxJoueur1.Name = "textBoxJoueur1";
             this.textBoxJoueur1.PlaceholderText = "Pseudo";
@@ -203,7 +224,7 @@
             this.labelJoueur2.AutoSize = true;
             this.labelJoueur2.Font = new System.Drawing.Font("Montserrat", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.labelJoueur2.ForeColor = System.Drawing.Color.White;
-            this.labelJoueur2.Location = new System.Drawing.Point(179, 203);
+            this.labelJoueur2.Location = new System.Drawing.Point(187, 242);
             this.labelJoueur2.Name = "labelJoueur2";
             this.labelJoueur2.Size = new System.Drawing.Size(133, 37);
             this.labelJoueur2.TabIndex = 6;
@@ -214,17 +235,91 @@
             this.labelJoueur1.AutoSize = true;
             this.labelJoueur1.Font = new System.Drawing.Font("Montserrat", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.labelJoueur1.ForeColor = System.Drawing.Color.White;
-            this.labelJoueur1.Location = new System.Drawing.Point(179, 91);
+            this.labelJoueur1.Location = new System.Drawing.Point(187, 130);
             this.labelJoueur1.Name = "labelJoueur1";
             this.labelJoueur1.Size = new System.Drawing.Size(128, 37);
             this.labelJoueur1.TabIndex = 5;
             this.labelJoueur1.Text = "Joueur 1";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::ProjetYams.Properties.Resources.user;
+            this.pictureBox4.Location = new System.Drawing.Point(130, 222);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(39, 33);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 5;
+            this.pictureBox4.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Montserrat", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(175, 218);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(128, 37);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Joueur 1";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.panel1.Controls.Add(this.label2title);
+            this.panel1.Controls.Add(this.pictureBox4);
+            this.panel1.Controls.Add(this.buttonPlay1v1);
+            this.panel1.Controls.Add(this.textBox21v1);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Location = new System.Drawing.Point(55, 212);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(437, 450);
+            this.panel1.TabIndex = 10;
+            // 
+            // label2title
+            // 
+            this.label2title.AutoSize = true;
+            this.label2title.Font = new System.Drawing.Font("Montserrat", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2title.ForeColor = System.Drawing.Color.White;
+            this.label2title.Location = new System.Drawing.Point(175, 130);
+            this.label2title.Name = "label2title";
+            this.label2title.Size = new System.Drawing.Size(85, 37);
+            this.label2title.TabIndex = 8;
+            this.label2title.Text = "1 vs 1";
+            // 
+            // buttonPlay1v1
+            // 
+            this.buttonPlay1v1.FlatAppearance.BorderSize = 0;
+            this.buttonPlay1v1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonPlay1v1.Font = new System.Drawing.Font("Montserrat", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonPlay1v1.ForeColor = System.Drawing.Color.White;
+            this.buttonPlay1v1.Location = new System.Drawing.Point(117, 372);
+            this.buttonPlay1v1.Name = "buttonPlay1v1";
+            this.buttonPlay1v1.Size = new System.Drawing.Size(200, 56);
+            this.buttonPlay1v1.TabIndex = 5;
+            this.buttonPlay1v1.Text = "Jouer";
+            this.buttonPlay1v1.UseVisualStyleBackColor = true;
+            this.buttonPlay1v1.Click += new System.EventHandler(this.buttonPlay1v1_Click);
+            // 
+            // textBox21v1
+            // 
+            this.textBox21v1.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.textBox21v1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox21v1.Font = new System.Drawing.Font("Montserrat", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox21v1.ForeColor = System.Drawing.Color.White;
+            this.textBox21v1.Location = new System.Drawing.Point(117, 273);
+            this.textBox21v1.MaxLength = 8;
+            this.textBox21v1.Name = "textBox21v1";
+            this.textBox21v1.PlaceholderText = "Pseudo";
+            this.textBox21v1.Size = new System.Drawing.Size(200, 32);
+            this.textBox21v1.TabIndex = 7;
+            this.textBox21v1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1024, 768);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelBackground);
             this.Controls.Add(this.panelTitleBar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -238,6 +333,9 @@
             this.panelBackground.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -258,5 +356,12 @@
         private Label labelJoueur1;
         private PictureBox pictureBox3;
         private PictureBox pictureBox2;
+        private Label label3title;
+        private PictureBox pictureBox4;
+        private Label label1;
+        private Panel panel1;
+        private Label label2title;
+        private Button buttonPlay1v1;
+        private TextBox textBox21v1;
     }
 }
