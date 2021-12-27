@@ -142,12 +142,14 @@ namespace ProjetYams
             {
                 labelPseudoGame.Text = "";
                 labelPseudoGame.Text = joueur1.Pseudo;
+                labelCombinaison1J2.Enabled = false;labelCombinaison2J2.Enabled = false;labelCombinaison3J2.Enabled = false;labelCombinaison4J2.Enabled = false;labelCombinaison5J2.Enabled = false;labelCombinaison6J2.Enabled = false;labelCombinaisonBrelanJ2.Enabled = false;labelCombinaisonCarreJ2.Enabled = false;labelCombinaisonChanceJ2.Enabled = false;labelCombinaisonFullJ2.Enabled = false;labelCombinaisonGrandeSuiteJ2.Enabled = false;labelCombinaisonPetiteSuiteJ2.Enabled = false;labelCombinaisonYamsJ2.Enabled = false;
                 tour = 2;
             }
             else if(tour == 2)
             {
                 labelPseudoGame.Text = "";
                 labelPseudoGame.Text = joueur2.Pseudo;
+                labelCombinaison1J1.Enabled = false;labelCombinaison2J1.Enabled = false;labelCombinaison3J1.Enabled = false;labelCombinaison4J1.Enabled = false;labelCombinaison5J1.Enabled = false;labelCombinaison6J1.Enabled = false;labelCombinaisonBrelanJ1.Enabled = false;labelCombinaisonCarreJ1.Enabled = false;labelCombinaisonChanceJ1.Enabled = false;labelCombinaisonFullJ1.Enabled = false;labelCombinaisonGrandeSuiteJ1.Enabled = false;labelCombinaisonPetiteSuiteJ1.Enabled = false;labelCombinaisonYamsJ1.Enabled = false;
                 tour = 1;
             }
 
@@ -485,6 +487,7 @@ namespace ProjetYams
             else { if (tour == 2) { joueur1.Combinaison["Un"] = int.Parse(labelCombinaison1J1.Text);}}
             CalculSommeBonusTotal();
             labelCombinaison1J1.ForeColor = Color.Black;
+            labelCombinaison1J1.Enabled = false;
             validationSelection();
         }
 
@@ -494,6 +497,7 @@ namespace ProjetYams
             else{ if (tour == 1) { joueur2.Combinaison["Un"] = int.Parse(labelCombinaison1J2.Text);}}
             CalculSommeBonusTotal();
             labelCombinaison1J2.ForeColor = Color.Black;
+            labelCombinaison1J2.Enabled = false;
             validationSelection();
         }
 
@@ -503,6 +507,7 @@ namespace ProjetYams
             else { if (tour == 2) { joueur1.Combinaison["Deux"] = int.Parse(labelCombinaison2J1.Text);}}
             CalculSommeBonusTotal();
             labelCombinaison2J1.ForeColor = Color.Black;
+            labelCombinaison2J1.Enabled = false;
             validationSelection();
         }
 
@@ -512,6 +517,7 @@ namespace ProjetYams
             else { if (tour == 2) { joueur2.Combinaison["Deux"] = int.Parse(labelCombinaison2J2.Text); } }
             CalculSommeBonusTotal();
             labelCombinaison2J2.ForeColor = Color.Black;
+            labelCombinaison2J2.Enabled = false;
             validationSelection();
         }
 
@@ -521,6 +527,7 @@ namespace ProjetYams
             else { if (tour == 2) { joueur1.Combinaison["Trois"] = int.Parse(labelCombinaison3J1.Text); } }
             CalculSommeBonusTotal();
             labelCombinaison3J1.ForeColor = Color.Black;
+            labelCombinaison3J1.Enabled = false;
             validationSelection();
         }
 
@@ -530,6 +537,7 @@ namespace ProjetYams
             else { if (tour == 1) { joueur2.Combinaison["Trois"] = int.Parse(labelCombinaison3J2.Text); } }
             CalculSommeBonusTotal();
             labelCombinaison3J2.ForeColor = Color.Black;
+            labelCombinaison3J2.Enabled = false;
             validationSelection();
         }
 
@@ -539,6 +547,7 @@ namespace ProjetYams
             else { if (tour == 2) { joueur1.Combinaison["Quatre"] = int.Parse(labelCombinaison4J1.Text); } }
             CalculSommeBonusTotal();
             labelCombinaison4J1.ForeColor = Color.Black;
+            labelCombinaison4J1.Enabled = false;
             validationSelection();
         }
 
@@ -548,6 +557,7 @@ namespace ProjetYams
             else { if (tour == 1) { joueur2.Combinaison["Quatre"] = int.Parse(labelCombinaison4J2.Text); } }
             CalculSommeBonusTotal();
             labelCombinaison4J2.ForeColor = Color.Black;
+            labelCombinaison4J2.Enabled = false;
             validationSelection();
         }
 
@@ -557,6 +567,7 @@ namespace ProjetYams
             else { if (tour == 2) { joueur1.Combinaison["Cinq"] = int.Parse(labelCombinaison5J1.Text); } }
             CalculSommeBonusTotal();
             labelCombinaison5J1.ForeColor = Color.Black;
+            labelCombinaison5J1.Enabled = false;
             validationSelection();
         }
 
@@ -566,6 +577,7 @@ namespace ProjetYams
             else { if (tour == 1) { joueur2.Combinaison["Cinq"] = int.Parse(labelCombinaison5J2.Text); } }
             CalculSommeBonusTotal();
             labelCombinaison5J2.ForeColor = Color.Black;
+            labelCombinaison5J2.Enabled = false;
             validationSelection();
         }
 
@@ -575,6 +587,7 @@ namespace ProjetYams
             else { if (tour == 2) { joueur1.Combinaison["Six"] = int.Parse(labelCombinaison6J1.Text);}}
             CalculSommeBonusTotal();
             labelCombinaison6J1.ForeColor = Color.Black;
+            labelCombinaison6J1.Enabled = false;
             validationSelection();
         }
 
@@ -584,6 +597,7 @@ namespace ProjetYams
             else { if (tour == 1) { joueur2.Combinaison["Six"] = int.Parse(labelCombinaison6J2.Text); } }
             CalculSommeBonusTotal();
             labelCombinaison6J2.ForeColor = Color.Black;
+            labelCombinaison6J2.Enabled = false;
             validationSelection();
         }
 
@@ -593,6 +607,7 @@ namespace ProjetYams
             else { if (tour == 2) { joueur1.Combinaison["Brelan"] = int.Parse(labelCombinaisonBrelanJ1.Text); } }
             CalculSommeBonusTotal();
             labelCombinaisonBrelanJ1.ForeColor = Color.Black;
+            labelCombinaisonBrelanJ1.Enabled = false;
             validationSelection();
         }
 
@@ -602,6 +617,7 @@ namespace ProjetYams
             else { if (tour == 1) { joueur2.Combinaison["Brelan"] = int.Parse(labelCombinaisonBrelanJ2.Text); } }
             CalculSommeBonusTotal();
             labelCombinaisonBrelanJ2.ForeColor = Color.Black;
+            labelCombinaisonBrelanJ2.Enabled = false;
             validationSelection();
         }
 
@@ -611,6 +627,7 @@ namespace ProjetYams
             else { if (tour == 2) { joueur1.Combinaison["Carré"] = int.Parse(labelCombinaisonCarreJ1.Text); } }
             CalculSommeBonusTotal();
             labelCombinaisonCarreJ1.ForeColor = Color.Black;
+            labelCombinaisonCarreJ1.Enabled = false;
             validationSelection();
         }
 
@@ -620,6 +637,7 @@ namespace ProjetYams
             else { if (tour == 1) { joueur2.Combinaison["Carré"] = int.Parse(labelCombinaisonCarreJ2.Text); } }
             CalculSommeBonusTotal();
             labelCombinaisonCarreJ2.ForeColor = Color.Black;
+            labelCombinaisonCarreJ2.Enabled = false;
             validationSelection();
         }
 
@@ -629,6 +647,7 @@ namespace ProjetYams
             else { if (tour == 2) { joueur1.Combinaison["Full"] = int.Parse(labelCombinaisonFullJ1.Text); } }
             CalculSommeBonusTotal();
             labelCombinaisonFullJ1.ForeColor = Color.Black;
+            labelCombinaisonFullJ1.Enabled = false;
             validationSelection();
         }
 
@@ -638,6 +657,7 @@ namespace ProjetYams
             else { if (tour == 1) { joueur2.Combinaison["Full"] = int.Parse(labelCombinaisonFullJ2.Text); } }
             CalculSommeBonusTotal();
             labelCombinaisonFullJ2.ForeColor = Color.Black;
+            labelCombinaisonFullJ2.Enabled = false;
             validationSelection();
         }
 
@@ -647,6 +667,7 @@ namespace ProjetYams
             else { if (tour == 2) { joueur1.Combinaison["Petite suite"] = int.Parse(labelCombinaisonPetiteSuiteJ1.Text); } }
             CalculSommeBonusTotal();
             labelCombinaisonPetiteSuiteJ1.ForeColor = Color.Black;
+            labelCombinaisonPetiteSuiteJ1.Enabled = false;
             validationSelection();
         }
 
@@ -656,6 +677,7 @@ namespace ProjetYams
             else { if (tour == 1) { joueur2.Combinaison["Petite suite"] = int.Parse(labelCombinaisonPetiteSuiteJ2.Text); } }
             CalculSommeBonusTotal();
             labelCombinaisonPetiteSuiteJ2.ForeColor = Color.Black;
+            labelCombinaisonPetiteSuiteJ2.Enabled = false;
             validationSelection();
         }
 
@@ -665,6 +687,7 @@ namespace ProjetYams
             else { if (tour == 2) { joueur1.Combinaison["Grand suite"] = int.Parse(labelCombinaisonGrandeSuiteJ1.Text); } }
             CalculSommeBonusTotal();
             labelCombinaisonGrandeSuiteJ1.ForeColor = Color.Black;
+            labelCombinaisonGrandeSuiteJ1.Enabled = false;
             validationSelection();
         }
 
@@ -674,6 +697,7 @@ namespace ProjetYams
             else { if (tour == 1) { joueur2.Combinaison["Grand suite"] = int.Parse(labelCombinaisonGrandeSuiteJ2.Text); } }
             CalculSommeBonusTotal();
             labelCombinaisonGrandeSuiteJ2.ForeColor = Color.Black;
+            labelCombinaisonGrandeSuiteJ2.Enabled = false;
             validationSelection();
         }
 
@@ -683,6 +707,7 @@ namespace ProjetYams
             else { if (tour == 2) { joueur1.Combinaison["Chance"] = int.Parse(labelCombinaisonChanceJ1.Text); } }
             CalculSommeBonusTotal();
             labelCombinaisonChanceJ1.ForeColor = Color.Black;
+            labelCombinaisonChanceJ1.Enabled = false;
             validationSelection();
         }
 
@@ -692,6 +717,7 @@ namespace ProjetYams
             else { if (tour == 1) { joueur2.Combinaison["Chance"] = int.Parse(labelCombinaisonChanceJ2.Text); } }
             CalculSommeBonusTotal();
             labelCombinaisonChanceJ2.ForeColor = Color.Black;
+            labelCombinaisonChanceJ2.Enabled = false;
             validationSelection();
         }
 
@@ -701,6 +727,7 @@ namespace ProjetYams
             else { if (tour == 2) { joueur1.Combinaison["Yams"] = int.Parse(labelCombinaisonYamsJ1.Text); } }
             CalculSommeBonusTotal();
             labelCombinaisonYamsJ1.ForeColor = Color.Black;
+            labelCombinaisonYamsJ1.Enabled = false;
             validationSelection();
         }
 
@@ -710,6 +737,7 @@ namespace ProjetYams
             else { if (tour == 1) { joueur2.Combinaison["Yams"] = int.Parse(labelCombinaisonYamsJ2.Text); } }
             CalculSommeBonusTotal();
             labelCombinaisonYamsJ2.ForeColor = Color.Black;
+            labelCombinaisonYamsJ2.Enabled = false;
             validationSelection();
         }
 
