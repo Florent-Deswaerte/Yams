@@ -142,14 +142,12 @@ namespace ProjetYams
             {
                 labelPseudoGame.Text = "";
                 labelPseudoGame.Text = joueur1.Pseudo;
-                labelCombinaison1J2.Enabled = false;labelCombinaison2J2.Enabled = false;labelCombinaison3J2.Enabled = false;labelCombinaison4J2.Enabled = false;labelCombinaison5J2.Enabled = false;labelCombinaison6J2.Enabled = false;labelCombinaisonBrelanJ2.Enabled = false;labelCombinaisonCarreJ2.Enabled = false;labelCombinaisonChanceJ2.Enabled = false;labelCombinaisonFullJ2.Enabled = false;labelCombinaisonGrandeSuiteJ2.Enabled = false;labelCombinaisonPetiteSuiteJ2.Enabled = false;labelCombinaisonYamsJ2.Enabled = false;
                 tour = 2;
             }
             else if(tour == 2)
             {
                 labelPseudoGame.Text = "";
                 labelPseudoGame.Text = joueur2.Pseudo;
-                labelCombinaison1J1.Enabled = false;labelCombinaison2J1.Enabled = false;labelCombinaison3J1.Enabled = false;labelCombinaison4J1.Enabled = false;labelCombinaison5J1.Enabled = false;labelCombinaison6J1.Enabled = false;labelCombinaisonBrelanJ1.Enabled = false;labelCombinaisonCarreJ1.Enabled = false;labelCombinaisonChanceJ1.Enabled = false;labelCombinaisonFullJ1.Enabled = false;labelCombinaisonGrandeSuiteJ1.Enabled = false;labelCombinaisonPetiteSuiteJ1.Enabled = false;labelCombinaisonYamsJ1.Enabled = false;
                 tour = 1;
             }
 
